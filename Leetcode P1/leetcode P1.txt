@@ -1,0 +1,29 @@
+You are given two integer N and K;
+find the remainder when sumation of all factorials 1 to N is diveded by K. 
+
+test case 1: 
+n = 2, k = 5;
+
+factorialS = 1! + 2! => 3
+	remainder = 2! % k;
+
+test case 2:
+
+n = 5, k = 5
+factorialS = 1! + 2! + 3! + 4! + 5! => 120
+	remainder = 0;
+
+test case 3:
+n = 10, k = 5
+factorialS = 1! + 2! + 3! + 4! + 5!+...+10! => 3628800
+	remainder = 4! = 24
+
+test case 4:
+n = 4, k = 10
+factorials = 1! + 2! + 3! + 4! =? 24
+	remainder = 4! % k = 4
+
+test case 5:
+n = 10, k = 4
+factorialS = 1! + 2! + 3! + 4! + 5!+...+10! => 1+2+6+24+....+3628800
+	remainder = 3! = 6
