@@ -1,4 +1,4 @@
-// Find Common Characters; complete: n
+// Find Common Characters; complete: y
 // date: 01.12.2021
 
 import java.util.*;
@@ -14,15 +14,21 @@ class Main {
 
 		List<String> l1 = new ArrayList<> ();
         String current = words[0];
-        int flag = 1;
+        System.out.println("current String: "+current);
+
+        int flag;
         for(int j=0; j<current.length(); j++) {
         	char c = current.charAt(j);
+        	flag = 1;
+        	// System.out.println("current Character: "+c);
         	for(int i=1; i<words.length; i++) {
         		if(words[i].indexOf(c) == -1) {
         			flag = 0;
         			break;
         		}
         	}
+
+       		// System.out.println("\tflag: "+flag);
 
         	if(flag == 1) {
         		l1.add(String.valueOf(c));
@@ -36,7 +42,7 @@ class Main {
         		}
         	}
         }
-
+        // System.out.println(l1);
         return l1;
     }
 }
