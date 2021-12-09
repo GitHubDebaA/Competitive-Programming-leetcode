@@ -4,9 +4,17 @@
 import java.util.*;
 
 class Main {
-	int matrix[][] = {};		
+	public static int matrix[][] = {{1, 2, 0, 4}, {5, 6, 7, 8}, {9, 0, 11, 12}, {13, 14, 15, 16}};		
 	public static void main(String[] args) {
+        System.out.println("Initial Matrix--");
+        for(int[] A : matrix) {
+            System.out.println(Arrays.toString(A));
+        }
 		solution();
+        System.out.println("\n\nAfter operation: ");
+        for(int[] A : matrix) {
+            System.out.println(Arrays.toString(A));
+        }
 	}
 
 	public static void solution() {
